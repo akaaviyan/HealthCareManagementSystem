@@ -1,0 +1,268 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --primary-color: #0b5ed7;
+  --bg-color: #f4f6fa;
+  --text-dark: #2b2b2b;
+}
+
+/* ===== BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden; /* prevent horizontal scroll on mobile */
+}
+
+/* Prevent iOS from zooming into form inputs */
+input, select, textarea {
+  font-size: 16px !important;
+}
+
+/* All inputs stay inside their container */
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ===== PREMIUM CARD ===== */
+.premium-card {
+  background: white;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.premium-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== NAVBAR ===== */
+.navbar-custom {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 0.75rem 0;
+}
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  font-size: 1.3rem;
+}
+/* Notification dropdown never bleeds off-screen on mobile */
+.navbar .dropdown-menu {
+  max-width: min(300px, 90vw);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ===== BADGES ===== */
+.badge-completed { background-color: #198754; color: white; }
+.badge-booked    { background-color: #0dcaf0; color: white; }
+.badge-cancelled { background-color: #dc3545; color: white; }
+
+/* ===== DASHBOARD LAYOUT ===== */
+.dashboard-container {
+  padding: 1.5rem 1rem;
+}
+@media (min-width: 768px) {
+  .dashboard-container {
+    padding: 2rem 0;
+  }
+}
+
+/* ===== TIME-SLOT GRID (BookAppointment & Reschedule modal) ===== */
+/* Replaces flex-wrap so slots never overflow the card boundary */
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+  gap: 0.5rem;
+}
+.slot-grid .btn {
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.3rem;
+  white-space: nowrap;
+}
+
+/* ===== MOBILE APPOINTMENT CARDS ===== */
+/* Used in Patient & Doctor dashboards instead of overflow tables */
+.appt-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid var(--primary-color);
+}
+.appt-card .appt-meta {
+  font-size: 0.78rem;
+  color: #6c757d;
+}
+
+/* ===== CONSULTATION RECORDS — mobile cards ===== */
+.consult-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #198754;
+}
+
+/* ===== MODALS ===== */
+@media (max-width: 480px) {
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+  .modal-content {
+    border-radius: 12px;
+  }
+}
+
+/* ===== HOME PAGE — stack CTA buttons on very small screens ===== */
+@media (max-width: 400px) {
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 !important;
+  }
+}
+
+/* ===== PROFILE — header stacks on mobile ===== */
+@media (max-width: 576px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+
+/* ===== LOGIN DEMO BUTTONS — wrap on small screens ===== */
+.demo-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page-content {
+  flex: 1;
+}
+
+.site-footer {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a2f4a 100%);
+  color: #b0c4de;
+  padding: 3rem 0 1.5rem;
+  margin-top: auto;
+}
+
+.footer-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.footer-about {
+  font-size: 0.85rem;
+  color: #8faac3;
+  line-height: 1.75;
+  margin-bottom: 0.6rem;
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #8faac3;
+  line-height: 1.55;
+}
+.footer-icon {
+  color: #4da6ff;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-emergency {
+  background: rgba(220, 53, 69, 0.15);
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  border-radius: 8px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.82rem;
+  color: #ff8fa3;
+}
+
+.footer-divider {
+  border-color: rgba(255,255,255,0.08);
+  margin: 1.75rem 0 1rem;
+}
+
+.footer-bottom {
+  font-size: 0.78rem;
+  color: #6a8099;
+}
+.footer-disclaimer {
+  font-style: italic;
+  color: #506070;
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding: 2rem 0 1.25rem;
+  }
+  /* Stack columns with spacing on mobile */
+  .site-footer .col-12 + .col-12 {
+    margin-top: 1.5rem;
+  }
+}

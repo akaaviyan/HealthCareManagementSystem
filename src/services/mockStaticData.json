@@ -1,0 +1,368 @@
+{
+  "users": [
+    {
+      "id": "doc-1",
+      "name": "Dr. John Smith",
+      "role": "Doctor",
+      "email": "john.smith@hospital.com",
+      "password": "password123",
+      "phone": "555-0101",
+      "specialty": "Cardiologist",
+      "experience": "15",
+      "qualification": "MD, FACC",
+      "address": "Heart Clinic, 123 Main St",
+      "emergencyContact": "Jane Smith: 555-0000"
+    },
+    {
+      "id": "doc-2",
+      "name": "Dr. Sarah Jane",
+      "role": "Doctor",
+      "email": "sarah.jane@hospital.com",
+      "password": "password123",
+      "phone": "555-0102",
+      "specialty": "Dermatologist",
+      "experience": "8",
+      "qualification": "MBBS, MD Skin",
+      "address": "Skin Care Clinic, 45 West Blvd",
+      "emergencyContact": "Mark Jane: 555-0001"
+    },
+    {
+      "id": "doc-3",
+      "name": "Dr. Emily Chen",
+      "role": "Doctor",
+      "email": "emily.chen@hospital.com",
+      "password": "password123",
+      "phone": "555-0103",
+      "specialty": "Pediatrician",
+      "experience": "12",
+      "qualification": "MD Pediatrics",
+      "address": "Kids Health, 88 North Ave",
+      "emergencyContact": "Tom Chen: 555-0002"
+    },
+    {
+      "id": "pat-1",
+      "name": "John Doe",
+      "role": "Patient",
+      "email": "john.doe@test.com",
+      "password": "password123",
+      "phone": "555-0201",
+      "age": "34",
+      "weight": "80",
+      "bloodType": "O+",
+      "allergies": "Penicillin",
+      "address": "123 Elm St",
+      "emergencyContact": "Jane Doe: 555-0200"
+    },
+    {
+      "id": "pat-2",
+      "name": "Alice Johnson",
+      "role": "Patient",
+      "email": "alice.johnson@test.com",
+      "password": "password123",
+      "phone": "555-0202",
+      "age": "28",
+      "weight": "65",
+      "bloodType": "A-",
+      "allergies": "None",
+      "address": "789 Pine St",
+      "emergencyContact": "Bob Johnson: 555-0203"
+    },
+    {
+      "id": "pat-3",
+      "name": "Michael Brown",
+      "role": "Patient",
+      "email": "michael.brown@test.com",
+      "password": "password123",
+      "phone": "555-0204",
+      "age": "45",
+      "weight": "82",
+      "bloodType": "B+",
+      "allergies": "Peanuts",
+      "address": "55 Maple Dr",
+      "emergencyContact": "Sarah Brown: 555-0205"
+    },
+    {
+      "id": "pat-4",
+      "name": "Emma Wilson",
+      "role": "Patient",
+      "email": "emma.wilson@test.com",
+      "password": "password123",
+      "phone": "555-0206",
+      "age": "22",
+      "weight": "58",
+      "bloodType": "AB+",
+      "allergies": "Dust Mites",
+      "address": "33 Cedar Ln",
+      "emergencyContact": "David Wilson: 555-0207"
+    },
+    {
+      "id": "pat-5",
+      "name": "James Taylor",
+      "role": "Patient",
+      "email": "james.taylor@test.com",
+      "password": "password123",
+      "phone": "555-0208",
+      "age": "52",
+      "weight": "90",
+      "bloodType": "O-",
+      "allergies": "None",
+      "address": "88 Birch Ct",
+      "emergencyContact": "Mary Taylor: 555-0209"
+    },
+    {
+      "id": "pat-6",
+      "name": "Olivia Martinez",
+      "role": "Patient",
+      "email": "olivia.martinez@test.com",
+      "password": "password123",
+      "phone": "555-0210",
+      "age": "31",
+      "weight": "62",
+      "bloodType": "A+",
+      "allergies": "Latex",
+      "address": "90 Walnut Way",
+      "emergencyContact": "Carlos Martinez: 555-0211"
+    },
+    {
+      "id": "pat-7",
+      "name": "William Anderson",
+      "role": "Patient",
+      "email": "william.anderson@test.com",
+      "password": "password123",
+      "phone": "555-0212",
+      "age": "60",
+      "weight": "85",
+      "bloodType": "B-",
+      "allergies": "Pollen",
+      "address": "100 Oak St",
+      "emergencyContact": "Lisa Anderson: 555-0213"
+    },
+    {
+      "id": "pat-8",
+      "name": "Sophia Thomas",
+      "role": "Patient",
+      "email": "sophia.thomas@test.com",
+      "password": "password123",
+      "phone": "555-0214",
+      "age": "25",
+      "weight": "55",
+      "bloodType": "O+",
+      "allergies": "None",
+      "address": "15 Spruce Ave",
+      "emergencyContact": "John Thomas: 555-0215"
+    },
+    {
+      "id": "pat-9",
+      "name": "Benjamin Jackson",
+      "role": "Patient",
+      "email": "benjamin.jackson@test.com",
+      "password": "password123",
+      "phone": "555-0216",
+      "age": "41",
+      "weight": "78",
+      "bloodType": "A+",
+      "allergies": "Dairy",
+      "address": "77 Willow Rd",
+      "emergencyContact": "Laura Jackson: 555-0217"
+    },
+    {
+      "id": "pat-10",
+      "name": "Isabella White",
+      "role": "Patient",
+      "email": "isabella.white@test.com",
+      "password": "password123",
+      "phone": "555-0218",
+      "age": "19",
+      "weight": "50",
+      "bloodType": "AB-",
+      "allergies": "Seafood",
+      "address": "42 Chestnut St",
+      "emergencyContact": "Robert White: 555-0219"
+    },
+    {
+      "id": "pat-11",
+      "name": "Lucas Harris",
+      "role": "Patient",
+      "email": "lucas.harris@test.com",
+      "password": "password123",
+      "phone": "555-0220",
+      "age": "38",
+      "weight": "88",
+      "bloodType": "O-",
+      "allergies": "None",
+      "address": "81 Ash Ln",
+      "emergencyContact": "Anna Harris: 555-0221"
+    },
+    {
+      "id": "pat-12",
+      "name": "Mia Martin",
+      "role": "Patient",
+      "email": "mia.martin@test.com",
+      "password": "password123",
+      "phone": "555-0222",
+      "age": "29",
+      "weight": "60",
+      "bloodType": "B+",
+      "allergies": "Aspirin",
+      "address": "29 Cypress Dr",
+      "emergencyContact": "Steven Martin: 555-0223"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "app-1",
+      "patientId": "pat-1",
+      "doctorId": "doc-1",
+      "date": "2024-05-10",
+      "timeSlot": "10:00 AM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-2",
+      "patientId": "pat-1",
+      "doctorId": "doc-2",
+      "date": "2024-05-12",
+      "timeSlot": "11:00 AM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-3",
+      "patientId": "pat-1",
+      "doctorId": "doc-3",
+      "date": "2024-06-05",
+      "timeSlot": "01:00 PM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-4",
+      "patientId": "pat-2",
+      "doctorId": "doc-1",
+      "date": "2024-06-15",
+      "timeSlot": "09:00 AM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-5",
+      "patientId": "pat-3",
+      "doctorId": "doc-2",
+      "date": "2024-07-20",
+      "timeSlot": "02:00 PM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-6",
+      "patientId": "pat-4",
+      "doctorId": "doc-3",
+      "date": "2024-08-01",
+      "timeSlot": "10:00 AM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-7",
+      "patientId": "pat-5",
+      "doctorId": "doc-1",
+      "date": "2024-08-10",
+      "timeSlot": "03:00 PM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-8",
+      "patientId": "pat-6",
+      "doctorId": "doc-2",
+      "date": "2024-09-05",
+      "timeSlot": "11:00 AM",
+      "status": "Completed"
+    },
+    {
+      "id": "app-9",
+      "patientId": "pat-1",
+      "doctorId": "doc-1",
+      "date": "2026-06-20",
+      "timeSlot": "10:00 AM",
+      "status": "Booked"
+    },
+    {
+      "id": "app-10",
+      "patientId": "pat-2",
+      "doctorId": "doc-2",
+      "date": "2026-06-21",
+      "timeSlot": "02:00 PM",
+      "status": "Booked"
+    },
+    {
+      "id": "app-11",
+      "patientId": "pat-3",
+      "doctorId": "doc-3",
+      "date": "2026-06-22",
+      "timeSlot": "04:00 PM",
+      "status": "Booked"
+    },
+    {
+      "id": "app-12",
+      "patientId": "pat-1",
+      "doctorId": "doc-2",
+      "date": "2026-06-25",
+      "timeSlot": "09:00 AM",
+      "status": "Booked"
+    }
+  ],
+  "consultations": [
+    {
+      "id": "cons-1",
+      "appointmentId": "app-1",
+      "notes": "John presented with mild chest pain. EKG is normal. Advised lifestyle changes.",
+      "prescription": "Aspirin 81mg daily",
+      "date": "2024-05-10T10:30:00Z"
+    },
+    {
+      "id": "cons-2",
+      "appointmentId": "app-2",
+      "notes": "John reported dry, itchy skin. Diagnosed with mild eczema.",
+      "prescription": "Hydrocortisone cream 1% apply twice daily",
+      "date": "2024-05-12T11:30:00Z"
+    },
+    {
+      "id": "cons-3",
+      "appointmentId": "app-3",
+      "notes": "Follow-up check for general fatigue.",
+      "prescription": "Multivitamins daily",
+      "date": "2024-06-05T13:30:00Z"
+    },
+    {
+      "id": "cons-4",
+      "appointmentId": "app-4",
+      "notes": "Routine check-up. BP is stable at 120/80.",
+      "prescription": "Lisinopril 10mg daily",
+      "date": "2024-06-15T09:30:00Z"
+    },
+    {
+      "id": "cons-5",
+      "appointmentId": "app-5",
+      "notes": "Severe acne flare-up. Recommended avoiding dairy.",
+      "prescription": "Tretinoin cream 0.025% at night",
+      "date": "2024-07-20T14:30:00Z"
+    },
+    {
+      "id": "cons-6",
+      "appointmentId": "app-6",
+      "notes": "Mild fever and cough. Viral infection suspected.",
+      "prescription": "Paracetamol 500mg PRN",
+      "date": "2024-08-01T10:30:00Z"
+    },
+    {
+      "id": "cons-7",
+      "appointmentId": "app-7",
+      "notes": "High cholesterol detected in recent blood work. Recommended Mediterranean diet.",
+      "prescription": "Atorvastatin 20mg daily",
+      "date": "2024-08-10T15:30:00Z"
+    },
+    {
+      "id": "cons-8",
+      "appointmentId": "app-8",
+      "notes": "Follow up for skin rash. Improving with current medication.",
+      "prescription": "Continue Hydrocortisone for 1 week",
+      "date": "2024-09-05T11:30:00Z"
+    }
+  ],
+  "unavailability": []
+}
